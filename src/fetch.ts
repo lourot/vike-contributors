@@ -1,4 +1,5 @@
 import fetch from "node-fetch";
+import fs from "fs";
 
 const ORGS = ["vikejs", "batijs"];
 
@@ -27,7 +28,8 @@ async function main() {
     (a, b) => b[1] - a[1]
   );
 
-  console.log(
+  fs.writeFileSync(
+    "./generated/contributors.json",
     JSON.stringify(
       {
         contributors: sortedContributors.map((contributor) => {
