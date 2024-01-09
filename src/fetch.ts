@@ -21,7 +21,21 @@ async function main() {
   const sortedContributors = [...contributors.entries()].sort(
     (a, b) => b[1] - a[1]
   );
-  console.log(sortedContributors);
+
+  console.log(
+    JSON.stringify(
+      {
+        contributors: sortedContributors.map((contributor) => {
+          return {
+            login: contributor[0],
+            contributions: contributor[1],
+          };
+        }),
+      },
+      null,
+      2
+    )
+  );
 }
 
 type Repo = {
