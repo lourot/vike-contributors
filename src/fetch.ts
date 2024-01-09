@@ -2,19 +2,28 @@ import fetch from "node-fetch";
 
 main();
 
+type Contributors = Map<string /* username */, number /* of contributions */>;
+
 async function main() {
   const repos = await getRepos("vikejs");
+  const contributors: Contributors = new Map();
   for (const repo of repos) {
-    const contributors = await getContributors(repo);
-    console.log(contributors.length);
+    const repoContributors = await getContributors(repo);
+    for (const contributor of repoContributors) {
+      contributors.set(
+        contributor.login,
+        (contributors.get(contributor.login) || 0) + contributor.contributions
+      );
+    }
   }
+  console.log(contributors);
 }
 
-type GithubRepo = {
+type Repo = {
   contributors_url: string;
 };
 
-async function getRepos(org: string): Promise<GithubRepo[]> {
+async function getRepos(org: string): Promise<Repo[]> {
   const repos = await fetchArray(`https://api.github.com/orgs/${org}/repos`);
   return repos.filter(
     (repo: any) =>
@@ -26,7 +35,12 @@ async function getRepos(org: string): Promise<GithubRepo[]> {
   );
 }
 
-async function getContributors(repo: GithubRepo) {
+type Contributor = {
+  login: string;
+  contributions: number;
+};
+
+async function getContributors(repo: Repo): Promise<Contributor[]> {
   return await fetchArray(repo.contributors_url);
 }
 
