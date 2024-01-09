@@ -1,19 +1,24 @@
 import fetch from "node-fetch";
 
+const ORGS = ["vikejs", "batijs"];
+
 main();
 
 type Contributors = Map<string /* username */, number /* of contributions */>;
 
 async function main() {
-  const repos = await getRepos("vikejs");
   const contributors: Contributors = new Map();
-  for (const repo of repos) {
-    const repoContributors = await getContributors(repo);
-    for (const contributor of repoContributors) {
-      contributors.set(
-        contributor.login,
-        (contributors.get(contributor.login) || 0) + contributor.contributions
-      );
+
+  for (const org of ORGS) {
+    const repos = await getRepos(org);
+    for (const repo of repos) {
+      const repoContributors = await getContributors(repo);
+      for (const contributor of repoContributors) {
+        contributors.set(
+          contributor.login,
+          (contributors.get(contributor.login) || 0) + contributor.contributions
+        );
+      }
     }
   }
 
