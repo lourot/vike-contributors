@@ -16,7 +16,12 @@ async function main() {
       );
     }
   }
-  console.log(contributors);
+
+  // Sort by number of contributions:
+  const sortedContributors = [...contributors.entries()].sort(
+    (a, b) => b[1] - a[1]
+  );
+  console.log(sortedContributors);
 }
 
 type Repo = {
