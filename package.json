@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "fetch": "node --loader ts-node/esm src/fetch.ts"
+  },
+  "devDependencies": {
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.2"
+  },
+  "type": "module"
+}
