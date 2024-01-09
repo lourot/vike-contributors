@@ -8,6 +8,7 @@
   },
   "scripts": {
     "fetch": "node --loader ts-node/esm src/fetch.ts",
+    "build": "echo nothing to do",
     "release": "release-me patch"
   },
   "devDependencies": {
