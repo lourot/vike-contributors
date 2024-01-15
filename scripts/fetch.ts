@@ -29,7 +29,7 @@ async function main() {
   );
 
   fs.writeFileSync(
-    "./generated/contributors.json",
+    "./src/generated/contributors.json",
     JSON.stringify(
       {
         contributors: sortedContributors.map((contributor) => {

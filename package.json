@@ -3,8 +3,8 @@
   "version": "0.0.2",
   "scripts": {
     "========= Basics": "",
-    "fetch": "node --loader ts-node/esm src/fetch.ts",
-    "build": "tsc",
+    "fetch": "node --loader ts-node/esm scripts/fetch.ts",
+    "build": "tsup",
     "========= Release": "",
     "release": "release-me patch",
     "========= Clean": "",
@@ -14,15 +14,15 @@
     "preinstall": "npx only-allow pnpm"
   },
   "type": "module",
-  "main": "./dist/src/contributors.js",
-  "types": "./dist/src/contributors.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/src/contributors.js"
+    ".": "./dist/index.js"
   },
   "typesVersions": {
     "*": {
       ".": [
-        "./dist/src/contributors.d.ts"
+        "./dist/index.d.ts"
       ]
     }
   },
@@ -30,7 +30,7 @@
     "@brillout/release-me": "^0.1.14",
     "node-fetch": "^3.3.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "tsup": "^8.0.1"
   },
   "packageManager": "pnpm@8.6.12"
 }
