@@ -2,15 +2,15 @@
   "contributors": [
     {
       "login": "brillout",
-      "contributions": 8378
+      "contributions": 8441
     },
     {
       "login": "magne4000",
-      "contributions": 877
+      "contributions": 889
     },
     {
       "login": "AurelienLourot",
-      "contributions": 538
+      "contributions": 553
     },
     {
       "login": "nitedani",
@@ -18,11 +18,15 @@
     },
     {
       "login": "renovate[bot]",
-      "contributions": 102
+      "contributions": 105
     },
     {
       "login": "phonzammi",
       "contributions": 45
+    },
+    {
+      "login": "4350pChris",
+      "contributions": 38
     },
     {
       "login": "usk94",
@@ -49,15 +53,11 @@
       "contributions": 12
     },
     {
-      "login": "4350pChris",
-      "contributions": 12
-    },
-    {
       "login": "bnn1",
       "contributions": 9
     },
     {
-      "login": "samuelstroschein",
+      "login": "XiNiHa",
       "contributions": 7
     },
     {
@@ -65,19 +65,19 @@
       "contributions": 7
     },
     {
-      "login": "XiNiHa",
+      "login": "samuelstroschein",
       "contributions": 7
-    },
-    {
-      "login": "redbar0n",
-      "contributions": 6
     },
     {
       "login": "yoroshikun",
       "contributions": 6
     },
     {
-      "login": "infomiho",
+      "login": "redbar0n",
+      "contributions": 6
+    },
+    {
+      "login": "blckngm",
       "contributions": 5
     },
     {
@@ -85,11 +85,11 @@
       "contributions": 5
     },
     {
-      "login": "blckngm",
+      "login": "infomiho",
       "contributions": 5
     },
     {
-      "login": "jrson83",
+      "login": "sapphi-red",
       "contributions": 4
     },
     {
@@ -97,35 +97,11 @@
       "contributions": 4
     },
     {
-      "login": "sapphi-red",
+      "login": "jrson83",
       "contributions": 4
     },
     {
-      "login": "alexrabin",
-      "contributions": 3
-    },
-    {
-      "login": "uifox",
-      "contributions": 3
-    },
-    {
-      "login": "alessbell",
-      "contributions": 3
-    },
-    {
-      "login": "CanRau",
-      "contributions": 3
-    },
-    {
-      "login": "Abhirup-99",
-      "contributions": 3
-    },
-    {
-      "login": "crummy",
-      "contributions": 3
-    },
-    {
-      "login": "stephensamra",
+      "login": "Amfeon",
       "contributions": 3
     },
     {
@@ -133,7 +109,31 @@
       "contributions": 3
     },
     {
-      "login": "Amfeon",
+      "login": "stephensamra",
+      "contributions": 3
+    },
+    {
+      "login": "crummy",
+      "contributions": 3
+    },
+    {
+      "login": "CanRau",
+      "contributions": 3
+    },
+    {
+      "login": "uifox",
+      "contributions": 3
+    },
+    {
+      "login": "alexrabin",
+      "contributions": 3
+    },
+    {
+      "login": "alessbell",
+      "contributions": 3
+    },
+    {
+      "login": "Abhirup-99",
       "contributions": 3
     },
     {
@@ -225,6 +225,10 @@
       "contributions": 1
     },
     {
+      "login": "Perlover",
+      "contributions": 1
+    },
+    {
       "login": "isakura313",
       "contributions": 1
     },
@@ -242,10 +246,6 @@
     },
     {
       "login": "kumarasinghe",
-      "contributions": 1
-    },
-    {
-      "login": "aleclarson",
       "contributions": 1
     },
     {
@@ -306,6 +306,10 @@
     },
     {
       "login": "ejm-hyesung",
+      "contributions": 1
+    },
+    {
+      "login": "aleclarson",
       "contributions": 1
     },
     {

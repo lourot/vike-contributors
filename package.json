@@ -1,19 +1,36 @@
 {
   "name": "vike-contributors",
   "version": "0.0.1",
-  "type": "module",
-  "main": "./generated/contributors.json",
-  "exports": {
-    ".": "./generated/contributors.json"
-  },
   "scripts": {
+    "========= Basics": "",
     "fetch": "node --loader ts-node/esm src/fetch.ts",
-    "build": "echo nothing to do",
-    "release": "release-me patch"
+    "build": "tsc",
+    "========= Release": "",
+    "release": "release-me patch",
+    "========= Clean": "",
+    "clean": "git clean -Xdf",
+    "reset": "pnpm run clean && pnpm install && pnpm run build",
+    "========= Only allow pnpm; forbid yarn & npm": "",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "type": "module",
+  "main": "./dist/src/contributors.js",
+  "types": "./dist/src/contributors.d.ts",
+  "exports": {
+    ".": "./dist/src/contributors.js"
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/src/contributors.d.ts"
+      ]
+    }
   },
   "devDependencies": {
     "@brillout/release-me": "^0.1.14",
     "node-fetch": "^3.3.2",
-    "ts-node": "^10.9.2"
-  }
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@8.6.12"
 }

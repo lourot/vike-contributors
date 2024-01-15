@@ -1,4 +1,5 @@
 /.vscode/
+/generated/
 /src/
 /tsconfig.json
 *.tgz
