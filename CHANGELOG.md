@@ -1,3 +1,12 @@
+## [0.0.5](AurelienLourot/vike-contributors/compare/v0.0.4...v0.0.5) (2024-01-16)
+
+
+### Features
+
+* documentation ([f0c3486](AurelienLourot/vike-contributors/commits/f0c34865c60aa687151beb3b7e7d5f89a11162a3))
+
+
+
 ## [0.0.4](AurelienLourot/vike-contributors/compare/v0.0.3...v0.0.4) (2024-01-16)
 
 
