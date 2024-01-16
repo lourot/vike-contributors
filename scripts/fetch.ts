@@ -5,7 +5,7 @@ const ORGS = ["vikejs", "batijs"];
 
 main();
 
-type Contributors = Map<string /* username */, number /* of contributions */>;
+type Contributors = Map<string /* username */, Contributor>;
 
 async function main() {
   const contributors: Contributors = new Map();
@@ -15,29 +15,28 @@ async function main() {
     for (const repo of repos) {
       const repoContributors = await getContributors(repo);
       for (const contributor of repoContributors) {
-        contributors.set(
-          contributor.login,
-          (contributors.get(contributor.login) || 0) + contributor.contributions
-        );
+        const knownContributor = contributors.get(contributor.login);
+        if (knownContributor) {
+          // Merge contributions:
+          knownContributor.contributions += contributor.contributions;
+          continue;
+        }
+        // Add new contributor:
+        contributors.set(contributor.login, contributor);
       }
     }
   }
 
   // Sort by number of contributions:
   const sortedContributors = [...contributors.entries()].sort(
-    (a, b) => b[1] - a[1]
+    (a, b) => b[1].contributions - a[1].contributions
   );
 
   fs.writeFileSync(
     "./src/generated/contributors.json",
     JSON.stringify(
       {
-        contributors: sortedContributors.map((contributor) => {
-          return {
-            login: contributor[0],
-            contributions: contributor[1],
-          };
-        }),
+        contributors: sortedContributors.map((contributor) => contributor[1]),
       },
       null,
       2
@@ -63,11 +62,19 @@ async function getRepos(org: string): Promise<Repo[]> {
 
 type Contributor = {
   login: string;
+  avatarUrl: string;
   contributions: number;
 };
 
 async function getContributors(repo: Repo): Promise<Contributor[]> {
-  return await fetchArray(repo.contributors_url);
+  // See https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repository-contributors
+  return (await fetchArray(repo.contributors_url)).map((contributor) => {
+    return {
+      login: contributor.login,
+      avatarUrl: contributor.avatar_url,
+      contributions: contributor.contributions,
+    };
+  });
 }
 
 async function fetchArray(url: string): Promise<any[]> {
