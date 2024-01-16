@@ -1,3 +1,12 @@
+## [0.0.4](AurelienLourot/vike-contributors/compare/v0.0.3...v0.0.4) (2024-01-16)
+
+
+### Features
+
+* add `avatarUrl` field ([c6058ed](AurelienLourot/vike-contributors/commits/c6058ed3c0a70bb044a0de2c731a5d41353550b0))
+
+
+
 ## [0.0.3](AurelienLourot/vike-contributors/compare/v0.0.2...v0.0.3) (2024-01-15)
 
 
