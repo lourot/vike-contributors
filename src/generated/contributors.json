@@ -3,17 +3,17 @@
     {
       "login": "brillout",
       "avatarUrl": "https://avatars.githubusercontent.com/u/1005638?v=4",
-      "contributions": 8448
+      "contributions": 10638
     },
     {
       "login": "magne4000",
       "avatarUrl": "https://avatars.githubusercontent.com/u/1098371?v=4",
-      "contributions": 889
+      "contributions": 915
     },
     {
       "login": "AurelienLourot",
       "avatarUrl": "https://avatars.githubusercontent.com/u/11795312?v=4",
-      "contributions": 553
+      "contributions": 602
     },
     {
       "login": "nitedani",
@@ -21,14 +21,19 @@
       "contributions": 305
     },
     {
+      "login": "Aslemammad",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/37929992?v=4",
+      "contributions": 198
+    },
+    {
       "login": "renovate[bot]",
       "avatarUrl": "https://avatars.githubusercontent.com/in/2740?v=4",
-      "contributions": 105
+      "contributions": 106
     },
     {
       "login": "phonzammi",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39896528?v=4",
-      "contributions": 45
+      "contributions": 51
     },
     {
       "login": "4350pChris",
@@ -61,8 +66,18 @@
       "contributions": 13
     },
     {
+      "login": "XiNiHa",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/8155259?v=4",
+      "contributions": 12
+    },
+    {
       "login": "Kenzo-Wada",
       "avatarUrl": "https://avatars.githubusercontent.com/u/79452224?v=4",
+      "contributions": 12
+    },
+    {
+      "login": "louwers",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/649392?v=4",
       "contributions": 12
     },
     {
@@ -71,9 +86,9 @@
       "contributions": 9
     },
     {
-      "login": "XiNiHa",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/8155259?v=4",
-      "contributions": 7
+      "login": "bartenra",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/77667589?v=4",
+      "contributions": 9
     },
     {
       "login": "patryk-smc",
@@ -86,13 +101,13 @@
       "contributions": 7
     },
     {
-      "login": "yoroshikun",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/1892447?v=4",
-      "contributions": 6
-    },
-    {
       "login": "redbar0n",
       "avatarUrl": "https://avatars.githubusercontent.com/u/459282?v=4",
+      "contributions": 7
+    },
+    {
+      "login": "yoroshikun",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1892447?v=4",
       "contributions": 6
     },
     {
@@ -116,13 +131,13 @@
       "contributions": 4
     },
     {
-      "login": "louwers",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/649392?v=4",
+      "login": "jrson83",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/45284565?v=4",
       "contributions": 4
     },
     {
-      "login": "jrson83",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/45284565?v=4",
+      "login": "deckchairlabs",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/7539725?v=4",
       "contributions": 4
     },
     {
@@ -168,6 +183,11 @@
     {
       "login": "Abhirup-99",
       "avatarUrl": "https://avatars.githubusercontent.com/u/48902681?v=4",
+      "contributions": 3
+    },
+    {
+      "login": "hemengke1997",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49073282?v=4",
       "contributions": 3
     },
     {
@@ -233,6 +253,16 @@
     {
       "login": "BanDroid",
       "avatarUrl": "https://avatars.githubusercontent.com/u/68449470?v=4",
+      "contributions": 2
+    },
+    {
+      "login": "SquCode",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/103045198?v=4",
+      "contributions": 2
+    },
+    {
+      "login": "JiangWeixian",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6839576?v=4",
       "contributions": 2
     },
     {
@@ -536,13 +566,38 @@
       "contributions": 1
     },
     {
-      "login": "hemengke1997",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/49073282?v=4",
+      "login": "afkcodes",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/17390257?v=4",
       "contributions": 1
     },
     {
-      "login": "afkcodes",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/17390257?v=4",
+      "login": "benmccann",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/322311?v=4",
+      "contributions": 1
+    },
+    {
+      "login": "hagaigold",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/29140318?v=4",
+      "contributions": 1
+    },
+    {
+      "login": "rnovacek",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/618886?v=4",
+      "contributions": 1
+    },
+    {
+      "login": "AlecAivazis",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/916317?v=4",
+      "contributions": 1
+    },
+    {
+      "login": "thecotne",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1606993?v=4",
+      "contributions": 1
+    },
+    {
+      "login": "bvanjoi",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/30187863?v=4",
       "contributions": 1
     }
   ]

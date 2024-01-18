@@ -2,28 +2,38 @@ import fetch from "node-fetch";
 import fs from "fs";
 
 const ORGS = ["vikejs", "batijs"];
+const OTHER_REPOS = [
+  "AurelienLourot/vike-contributors",
+  "brillout/release-me",
+  "brillout/docpress",
+  "brillout/telefunc",
+  "brillout/test-e2e",
+  "brillout/react-streaming",
+];
 
 main();
 
 type Contributors = Map<string /* username */, Contributor>;
 
 async function main() {
-  const contributors: Contributors = new Map();
-
+  const repos: Repo[] = [];
   for (const org of ORGS) {
-    const repos = await getRepos(org);
-    for (const repo of repos) {
-      const repoContributors = await getContributors(repo);
-      for (const contributor of repoContributors) {
-        const knownContributor = contributors.get(contributor.login);
-        if (knownContributor) {
-          // Merge contributions:
-          knownContributor.contributions += contributor.contributions;
-          continue;
-        }
-        // Add new contributor:
-        contributors.set(contributor.login, contributor);
+    repos.push(...(await getOrgRepos(org)));
+  }
+  repos.push(...getOtherRepos());
+
+  const contributors: Contributors = new Map();
+  for (const repo of repos) {
+    const repoContributors = await getContributors(repo);
+    for (const contributor of repoContributors) {
+      const knownContributor = contributors.get(contributor.login);
+      if (knownContributor) {
+        // Merge contributions:
+        knownContributor.contributions += contributor.contributions;
+        continue;
       }
+      // Add new contributor:
+      contributors.set(contributor.login, contributor);
     }
   }
 
@@ -48,7 +58,7 @@ type Repo = {
   contributors_url: string;
 };
 
-async function getRepos(org: string): Promise<Repo[]> {
+async function getOrgRepos(org: string): Promise<Repo[]> {
   const repos = await fetchArray(`https://api.github.com/orgs/${org}/repos`);
   return repos.filter(
     (repo: any) =>
@@ -58,6 +68,14 @@ async function getRepos(org: string): Promise<Repo[]> {
       !repo.disabled &&
       !repo.is_template
   );
+}
+
+function getOtherRepos(): Repo[] {
+  return OTHER_REPOS.map((repo) => {
+    return {
+      contributors_url: `https://api.github.com/repos/${repo}/contributors`,
+    };
+  });
 }
 
 type Contributor = {
