@@ -1,3 +1,12 @@
+## [0.0.6](AurelienLourot/vike-contributors/compare/v0.0.5...v0.0.6) (2024-01-18)
+
+
+### Features
+
+* fetch contributors from more repos ([df1f63e](AurelienLourot/vike-contributors/commits/df1f63e83d5229561b7a01b574f20795f597338f))
+
+
+
 ## [0.0.5](AurelienLourot/vike-contributors/compare/v0.0.4...v0.0.5) (2024-01-16)
 
 
