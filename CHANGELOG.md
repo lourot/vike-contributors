@@ -1,3 +1,12 @@
+## [0.0.7](AurelienLourot/vike-contributors/compare/v0.0.6...v0.0.7) (2024-01-24)
+
+
+### Features
+
+* update contributors' list ([e2d3dc0](AurelienLourot/vike-contributors/commits/e2d3dc007561bd5dc1c56e659c0f913fca8fec86))
+
+
+
 ## [0.0.6](AurelienLourot/vike-contributors/compare/v0.0.5...v0.0.6) (2024-01-18)
 
 
