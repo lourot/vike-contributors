@@ -1,6 +1,6 @@
 {
   "name": "vike-contributors",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "========= Basics": "",
     "fetch": "node --loader ts-node/esm scripts/fetch.ts",
